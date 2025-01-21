@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 0px 40px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white; /* Set a solid background color */
+}
+.search-bar form {
+  height: 100% !important;
+}
+form {
+  margin: 0;
+}
+
+.search-bar {
+  height: 45px;
+  width: calc(100% - 320px);
+  max-width: 600px;
+  margin-right: 40px;
+  position: relative;
+}
+@media (min-width: 1025px) {
+  .search-bar input {
+    font-size: 1.1rem;
+  }
+}
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  padding: 0 36px 0 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  color: darkblue;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.search-bar input::placeholder {
+  color: rgb(21, 21, 86); /* Set the placeholder text color to dark blue */
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+.search-bar input:focus {
+  border-color: orange; /* Change border color to orange */
+  outline: none; /* Remove the default browser outline */
+  box-shadow: 0 0 5px orange; /* Optional: Add a subtle orange glow effect */
+}
+
+.fas {
+  font-family: fontawesome;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+i {
+  font-weight: normal !important;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  border: 0 !important;
+  background: none !important;
+  font-size: 1.1rem;
+}
+
+body {
+  font-family: Poppins, sans-serif !important;
+  font-size: 18px;
+  font-display: swap !important;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1025px) {
+  .hamburger-menu {
+    width: 30px;
+    height: 24px;
+  }
+}
+.hamburger-menu {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hamburger-menu span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: darkblue;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
